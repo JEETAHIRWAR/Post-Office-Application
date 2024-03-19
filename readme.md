@@ -80,7 +80,10 @@ Open `index.html` in your preferred web browser. Click on the "Get Started" butt
 
 ## Screenshots
 
+### Page One
 ![screencapture](./images/screencapture.png)
+
+### Page Two
 ![screencapture](./images/screencapture2.png)
 
 ## Like my work and want to support me?
