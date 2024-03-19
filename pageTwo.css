@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Averia Libre", system-ui;
+    /* font-weight: 300; */
+    color: #B7C9F2;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* 
+::-webkit-scrollbar-track {
+    background: #535C91;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8CB9BD;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
+
+
+
+.SecondContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    height: 100vh;
+    background-color: #000000;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+.boxOne {
+    background-color: #000000;
+    padding: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+.boxOne span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.ipBack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ipBack p {
+    margin: 20px 10px 0px 100px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #B8BCCC;
+}
+
+.ipBack #ipAddress {
+    font-weight: bold;
+}
+
+.ipBack .back {
+    padding: 6px 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: 2px solid #2D9596;
+    background-color: transparent;
+    color: #B7C9F2;
+    border-radius: 7px;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ipBack .back:hover {
+    background-color: #1C6B6F;
+    /* color: #1C6B6F; */
+    border: 2px solid #2D9596;
+}
+
+
+.llCO {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 10px 10px 0px;
+}
+
+.latLong,
+.cityRegion,
+.OrgaHost {
+    flex: 1;
+}
+
+.latLong p,
+.cityRegion p,
+.OrgaHost p {
+    margin: 20px 10px 0px 100px;
+    font-size: 18px;
+    color: #B8BCCC;
+    font-weight: 600;
+}
+
+.mapView {
+    text-align: center;
+    background-color: #0b2525;
+    padding: 50px 100px 80px 100px;
+}
+
+.mapView p {
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #B8BCCC;
+    font-weight: 900;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    background-color: #333;
+}
+
+
+.moreInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    padding: 50px 100px 30px 100px;
+    text-align: center;
+}
+
+.moreInfo p {
+    margin-bottom: 60px;
+    font-size: 40px;
+    color: #B8BCCC;
+    font-weight: 900;
+}
+
+
+.tdPm {
+    text-align: left;
+    width: 100%;
+}
+
+.tdPm p {
+    margin: 0;
+    font-size: 22px;
+    color: #B8BCCC;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tdPm p:nth-child(2) {
+    margin-top: 10px;
+}
+
+
+
+.pOnY {
+    padding: 20px;
+    background-color: #000000;
+}
+
+.pOnY h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #B8BCCC;
+    font-weight: 900;
+}
+
+.sInput {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+}
+
+.sInput input {
+    padding: 10px 10px 10px 40px;
+    width: 98.5%;
+    box-sizing: border-box;
+    border: 3px solid #0b2525;
+    border-radius: 5px;
+    background: none;
+    font-size: 16px;
+}
+
+.sInput input:focus {
+    outline: none;
+    border-color: #2D9596;
+    /* Change border color on focus */
+}
+
+.sInput::before {
+    content: '';
+    background-image: url('./images/3844432-magnifier-search-zoom_110300.svg');
+    background-size: 20px 20px;
+    color: #B8BCCC;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 40px 0px 40px;
+}
+
+.card {
+    background-color: #0b2525;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    border: 2px solid #0b2525;
+}
+
+.card:hover {
+    border: 2px solid #2D9596;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #B8BCCC;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card span {
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .boxOne p {
+        margin: 20px 10px 0px 0px;
+        font-size: 18px;
+    }
+
+    .llCO {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .latLong,
+    .cityRegion,
+    .OrgaHost {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .latLong p,
+    .cityRegion p,
+    .OrgaHost p {
+        font-size: 14px;
+    }
+
+    .mapView {
+        padding: 10px 20px 20px 20px;
+    }
+
+    .mapView p {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    #map {
+        width: 100%;
+        height: 200px;
+    }
+
+    .moreInfo {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .moreInfo p {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .tdPm p {
+        margin: 0;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .pOnY {
+        padding: 10px;
+    }
+
+    .pOnY h1 {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+
+    .sInput {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .sInput::before {
+        left: 35px;
+    }
+
+    .cardsContainer {
+        padding: 0px 15px 0px 15px;
+    }
+
+    .card {
+        width: calc(100% - 10px);
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+}

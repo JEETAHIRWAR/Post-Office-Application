@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Post Office Application</title>
+    <link rel="icon" href="./images/post.png" type="image/x-icon">
+    <link rel="stylesheet" href="pageOne.css">
+    <link rel="stylesheet" href="pageTwo.css">
+</head>
+
+<body>
+    <section class="mainContainer">
+        <div class=" leftContainer">
+            <h1>Post Office Application</h1>
+            <p class="infoText">This Application Allows you to extract information about the nearest Post Offices, based
+                on your location. </p>
+            <img src="./images/raising-additional-funds.svg" alt="Post Office SVG">
+        </div>
+        <div class="rightContainer">
+            <p>Your Current IP Address is : <span id="ipAddress">{{ip _address}}</span></p>
+            <button id="getLocation">Get Started</button>
+            <div class="copyright">Copyright © 2024 Jeet. All rights reserved.</div>
+        </div>
+    </section>
+
+
+    <section class="SecondContainer">
+        <div class="boxOne">
+            <div class="ipBack">
+                <p>IP Address : <span id="IpAddress">{{ip_address}}</span></p>
+                <button class="back" id="backButton">Back</button>
+            </div>
+            <div class="llCO">
+                <div class="latLong">
+                    <p>Latitude : <span id="latitude">{{latitude}}</span></p>
+                    <p>Longitude : <span id="longitude">{{longitude}}</span></p>
+                </div>
+                <div class="cityRegion">
+                    <p>City : <span id="city">{{city}}</span></p>
+                    <p>Region : <span id="region">{{region}}</span></p>
+                </div>
+                <div class="OrgaHost">
+                    <p>Organization : <span id="organisation">{{organization}}</span></p>
+                    <p>Hostname : <span id="host">{{host}}</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="mapView">
+            <p>Your Current Location</p>
+            <div id="map">
+                <iframe src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" width="100%"
+                    height="100%" frameborder="0" style="border:0"></iframe>
+            </div>
+        </div>
+        <div class="moreInfo">
+            <p>More Information About You</p>
+            <div class="tdPm">
+                <p class="timeZone">Timezone : <span id="timezone">{{timezone}}</span></p>
+                <p class="dateAndTime">
+                    Date And Time : <span id="date">{{date}}</span> ||
+                    <span id="time">{{time}}</span>
+                </p>
+                <p class="pincode">Pincode : <span id="pincode">{{pincode}}</span></p>
+                <p class="message">Message: Number of pincode(s) found:
+                    <span id="message">{{message}}</span>
+                </p>
+            </div>
+        </div>
+        <div class="pOnY">
+            <h1>Post Offices Near You</h1>
+            <div class="sInput">
+                <i class="searchIcon"></i>
+                <input type="text" placeholder="Search By Name">
+            </div>
+            <div class="cardsContainer">
+                <div class="card">
+                    <p>Name : <span id="name">{{name}}</span></p>
+                    <p>Branch Type : <span id="Btype">{{Branch Type}}</span></p>
+                    <p>Delivery Status : <span id="Dstatus">{{Delivery Status}}</span></p>
+                    <p>District : <span id="District">{{District}}</span></p>
+                    <p>Division : <span id="Division">{{Division}}</span></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="Script.js"></script>
+</body>
+
+</html>

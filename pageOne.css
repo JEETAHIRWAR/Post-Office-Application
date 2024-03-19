@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Averia Libre", system-ui;
+    /* font-weight: 300; */
+    color: #B7C9F2;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+.leftContainer {
+    flex: 1;
+    height: 100vh;
+    color: #deeec9;
+    background-color: #000000;
+}
+
+.leftContainer h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 50px 20px 10px 50px;
+    /* color: #0b2525; */
+}
+
+.leftContainer .infoText {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 20px 20px 10px 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 80px 10px 10px 150px;
+}
+
+.rightContainer {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0b2525;
+}
+
+.rightContainer {
+    position: relative;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 12px;
+    color: #666;
+    /* color: #2D9596; */
+    /* color: #B7C9F2; */
+}
+
+
+.rightContainer p {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #2D9596;
+}
+
+.rightContainer button {
+    padding: 10px 100px;
+    margin-top: 30px;
+    font-size: 18px;
+    border: 2px solid #2D9596;
+    background-color: transparent;
+    color: #B7C9F2;
+    border-radius: 7px;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rightContainer button:hover {
+    background-color: #1C6B6F;
+    /* color: #1C6B6F; */
+    border: 2px solid #2D9596;
+}
+
+
+
+
+/* Adjustments for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .mainContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightContainer {
+        min-height: 40vh;
+        min-width: 100%;
+        text-align: center;
+        /* margin-top: 20px; */
+    }
+
+    .rightContainer p {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .rightContainer button {
+        padding: 10px 50px;
+        font-size: 16px;
+    }
+
+    .leftContainer h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin: 50px 20px 10px 20px;
+    }
+
+    .leftContainer .infoText {
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 20px 20px 10px 20px;
+    }
+
+
+    img {
+        max-width: 80%;
+        height: auto;
+        margin: 20px 10px 10px 40px;
+    }
+}
